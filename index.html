@@ -56,13 +56,15 @@
 		font-family: Tahoma, Geneva, sans-serif;
 		}
 	</style>
+
 	</head>
 	<body>
 		<div class="header">
 			<h1 class="color2 center">UC Davis Memories</h1>
 			<p class="color2 center"> 2016-2020 <p/>
 		</div>
-		<h2 class="color background border">Freshman Year (2016-2017)</h2>
+		<h2 id="freshman-toggle" class="color background border">Freshman Year (2016-2017)</h2>
+  <div id="fresh">
 		<div class="gallery">
 			<a target="_blank" href="freshman/dorm.jpg">
 				<img src="freshman/dorm.jpg" alt="dorm" width="600" height="400">
@@ -109,8 +111,7 @@
 			<a target="_blank" href="freshman/picnicday.jpg">
 				<img src="freshman/picnicday.jpg" alt="picnicday" width="600" height="400">
 			</a>
-			<div class="desc">Picnic Day: a  day we celebrate Davis community (and day drinking for those 21+  &#128521;)
-			</div>
+			<div class="desc">Picnic Day: a  day we celebrate Davis community (and day drinking for those 21+ &#128521;)</div>
 		</div>
 		<div class="gallery">
 			<a target="_blank" href="freshman/weby1.jpg">
@@ -123,9 +124,11 @@
 			<a target="_blank" href="freshman/roommates.jpeg">
 				<img src="freshman/roommates.jpeg" alt="picnicday" width="600" height="400">
 			</a>
-			<div class="desc"> Webster 112 roommates (2 Jews, a Muslim, a Catholic and lots of fun memories)
+			<div class="desc"> Webster 112 roommates (2 Jews, a Muslim, a Catholic and lots of fun memories)</div>
+
+
 		</div>
-	</div>
+  </div>
 		<h2 style="margin-top:800px" class="color background border"><b>Sophomore Year (2017-2018)</h2>
 			<div class="gallery">
 				<a target="_blank" href="Sophomore/apt.jpg">
@@ -539,5 +542,13 @@
 				</a>
 				<div class="desc"> Celebration dinner for the end of winter quarter</div>
 			</div>
+	<script>
+			$(document).ready(function(){
+				$("#freshman-toggle").click(function(){
+					$("#fresh").fadeIn();
+				});
+			});
+	</script>
+
 	</body>
-	<html>
+	</html>
