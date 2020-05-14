@@ -7,13 +7,9 @@
 		  crossorigin="anonymous"></script>
 	<style>
 
+
 .button{
-	background-color: white;
-  border-style:double;
-  border-color: gold;
 	margin-right:900px;
-	border-width: thick;
-  color: midnightblue;
   padding: 15px 20px;
   text-align: center;
   text-decoration:none;
@@ -21,17 +17,43 @@
   font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
-	width:400px;
+	width:1240px;
+	height: 300px;
 	display: block;
 }
+.button_fresh{
+	background-image: url("freshbackground.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: MidnightBlue;
+}
+.button_soph{
+	background-image: url("sophbackground.jpg");
+	background-size: cover;
+	color: MidnightBlue;
+
+}
+.button_jun{
+	background-image: url("junbackground.jpeg");
+	background-size: cover;
+	color: #e8ecb5;
+
+}
+.button_sen{
+	background-image: url("senbackground.jpeg");
+	background-size: cover;
+	color: #e8ecb5;
+
+}
+
 	.header{
 		background-color: MidnightBlue;
 		padding:20px;
 		text-align: center;
-		color: gold;
+		color: #f1c40f;
 	}
 	.color2{
-		color:gold;
+		color:#f1c40f;
 	}
 	.background{
 		background-color: white;
@@ -46,7 +68,7 @@
 
 	div.gallery{
 		margin:5px;
-		border:1px solid gold;
+		border:1px solid #f1c40f;
 		float:left;
 		width:215px;
 	}
@@ -71,9 +93,9 @@
 	<body>
 		<div class="header">
 			<h1 class="color2 center">UC Davis Memories</h1>
-			<p class="color2 center"> 2016-2020 <p/>
+			<p class="color2 center"> &#128690;&#128004; 2016-2020 &#128004;&#128690;<p/>
 		</div>
-		<button id=freshman-toggle class="button"> Freshman Year (2016-2017)</button>
+		<button id=freshman-toggle class="button button_fresh"> Freshman Year <br> (2016-2017)</button>
   	<nav id="fresh">
 		<div class="gallery">
 			<a target="_blank" href="freshman/dorm.jpg">
@@ -139,7 +161,7 @@
 
 		</div>
   </nav>
-	<button id=Sophomore-toggle class="button"> Sophomore Year (2017-2018)</button>
+	<button id=Sophomore-toggle class="button button_soph"> Sophomore Year <br> (2017-2018)</button>
 		<nav id="soph">
 			<div class="gallery">
 				<a target="_blank" href="Sophomore/apt.jpg">
@@ -232,7 +254,7 @@
 				<div class="desc"> Lindsay and I got matching jeans short overalls </div>
 			</div>
 		</nav>
-	<button id=Junior-toggle class="button"> Junior Year (2018-2019)</button>
+	<button id=Junior-toggle class="button button_jun"> Junior Year <br>  (2018-2019)</button>
 		<nav id="jun">
 			<div class="gallery">
 				<a target="_blank" href="Junior/sukkot.jpg">
@@ -361,7 +383,7 @@
 				<div class="desc"> Namis...The best all you can eat sushi at Davis </div>
 			</div>
 		</nav>
-	<button id=Senior-toggle class="button"> Senior Year (2019-2020)</button>
+	<button id=Senior-toggle class="button button_sen"> Senior Year <br> (2019-2020)</button>
 		<nav id="sen">
 			<div class="gallery">
 				<a target="_blank" href="Senior/DNA.jpeg">
