@@ -21,6 +21,25 @@
 	height: 300px;
 	display: block;
 }
+.button1{
+	margin-right:900px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+	width:auto;
+	height: auto;
+	display: block;
+}
+.button_back{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: MidnightBlue;
+}
 .button_fresh{
 	background-image: url("freshbackground.jpeg");
 	background-repeat: no-repeat;
@@ -67,7 +86,7 @@
 	}
 
 	div.gallery{
-		margin:5px;
+		margin:15px;
 		border:1px solid #f1c40f;
 		float:left;
 		width:215px;
@@ -88,6 +107,7 @@
 		font-family: Tahoma, Geneva, sans-serif;
 		}
 
+
 	</style>
 	</head>
 	<body>
@@ -95,6 +115,9 @@
 			<h1 class="color2 center">UC Davis Memories</h1>
 			<p class="color2 center"> &#128690;&#128004; 2016-2020 &#128004;&#128690;<p/>
 		</div>
+		<div id="disappear">
+		<button1 id=back-toggle class="button button_fresh"> Click on me </button1> </div>
+  	<nav id="back">
 		<button id=freshman-toggle class="button button_fresh"> Freshman Year <br> (2016-2017)</button>
   	<nav id="fresh">
 		<div class="gallery">
@@ -157,8 +180,6 @@
 				<img src="freshman/roommates.jpeg" alt="picnicday" width="600" height="400">
 			</a>
 			<div class="desc"> Webster 112 roommates (2 Jews, a Muslim, a Catholic and lots of fun memories)</div>
-
-
 		</div>
   </nav>
 	<button id=Sophomore-toggle class="button button_soph"> Sophomore Year <br> (2017-2018)</button>
@@ -167,7 +188,7 @@
 				<a target="_blank" href="Sophomore/apt.jpg">
 					<img src="Sophomore/apt.jpg" alt="apt" width="600" height="400">
 				</a>
-				<div class="desc"> My first apartment (The Drake 151) </div>
+				<div class="desc"> My first apartment (the Drake 151) </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Sophomore/fall.jpg">
@@ -227,13 +248,13 @@
 				<a target="_blank" href="Sophomore/conference2.jpg">
 					<img src="Sophomore/conference2.jpg" alt="conference2" width="600" height="400">
 				</a>
-				<div class="desc"> MTF Conference at Vegas </div>
+				<div class="desc"> MTF Conference in Vegas </div>
 	  	</div>
 			<div class="gallery">
 				<a target="_blank" href="Sophomore/vegas.jpg">
 					<img src="Sophomore/vegas.jpg" alt="Vegas" width="600" height="400">
 				</a>
-				<div class="desc"> MTF Conference at Vegas </div>
+				<div class="desc"> MTF Conference in Vegas </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Sophomore/grandma.jpg">
@@ -245,7 +266,7 @@
 				<a target="_blank" href="Sophomore/yomhaazmaut.jpg">
 					<img src="Sophomore/yomhaazmaut.jpg" alt="yomhaazmaut" width="600" height="400">
 				</a>
-				<div class="desc">Yom Haazmaut celebration </div>
+				<div class="desc">Yom Haazmaut celebration (My friendiversary with Ben) </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Sophomore/twins.jpg">
@@ -338,7 +359,7 @@
 				<a target="_blank" href="junior/urc.jpg">
 					<img src="junior/urc.jpg" alt="apt" width="600" height="400">
 				</a>
-				<div class="desc"> Got to present my research from Draper's lab about asymmetry in zebrafish at the Undergraduate Research Conference </div>
+				<div class="desc"> Presented my research from Draper's lab about asymmetry in zebrafish at the Undergraduate Research Conference </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="junior/retreat.jpg">
@@ -356,7 +377,7 @@
 				<a target="_blank" href="junior/yomhaazmaut.jpeg">
 					<img src="junior/yomhaazmaut.jpeg" alt="apt" width="600" height="400">
 				</a>
-				<div class="desc"> Yom Haazmaut Carnival </div>
+				<div class="desc"> Yom Haazmaut Carnival (2nd friendiversary with Ben) </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Junior/pool.jpg">
@@ -365,8 +386,8 @@
 				<div class="desc"> Pool day! </div>
 			</div>
 			<div class="gallery">
-				<a target="_blank" href="junior/berryessa2.jpeg">
-					<img src="junior/berryessa2.jpeg" alt="apt" width="600" height="400">
+				<a target="_blank" href="junior/berryessa3.jpeg">
+					<img src="junior/berryessa3.jpeg" alt="apt" width="600" height="400">
 				</a>
 				<div class="desc"> Lake Berryessa with Gaia </div>
 			</div>
@@ -451,7 +472,12 @@
 				</a>
 				<div class="desc"> Pre NFL playoffs mimosas at DeVeres</div>
 			</div>
-
+			<div class="gallery">
+				<a target="_blank" href="Senior/warriors.jpg">
+					<img src="Senior/warriors.jpg" alt="warriors" width="600" height="400">
+				</a>
+				<div class="desc"> Warriors vs Kings with Yael and Forrest </div>
+			</div>
 			<div class="gallery">
 				<a target="_blank" href="Senior/lesliebday.jpeg">
 					<img src="Senior/lesliebday.jpeg" alt="lesliebday" width="600" height="400">
@@ -477,6 +503,12 @@
 				<div class="desc">1/3 (intentional) awkward photos with my Heinkeken buddy </div>
 			</div>
 			<div class="gallery">
+				<a target="_blank" href="Senior/uob.jpg">
+					<img src="Senior/uob.jpg" alt="conference1" width="600" height="400">
+				</a>
+				<div class="desc">Saturday night at UOB</div>
+			</div>
+			<div class="gallery">
 				<a target="_blank" href="Senior/Mishelanu.jpeg">
 					<img src="Senior/Mishelanu.jpeg" alt="Mishelanu" width="600" height="400">
 				</a>
@@ -489,22 +521,16 @@
 				<div class="desc"> Davis, Berkeley and bay area mishelanu campuses</div>
 			</div>
 			<div class="gallery">
-				<a target="_blank" href="Senior/uob.jpg">
-					<img src="Senior/uob.jpg" alt="conference1" width="600" height="400">
-				</a>
-				<div class="desc">Saturday night at UOB</div>
-			</div>
-			<div class="gallery">
 				<a target="_blank" href="Senior/retreat.jpeg">
 					<img src="Senior/retreat.jpeg" alt="retreat" width="600" height="400">
 				</a>
 				<div class="desc"> AFI retreat </div>
 			</div>
 			<div class="gallery">
-				<a target="_blank" href="Senior/vday3.jpg">
-					<img src="Senior/vday3.jpg" alt="vday3" width="600" height="400">
+				<a target="_blank" href="Senior/awkphoto2.jpg">
+					<img src="Senior/awkphoto2.jpg" alt="awkphoto2" width="600" height="400">
 				</a>
-				<div class="desc"> Valentine's day at Davis </div>
+				<div class="desc">2/3 (intentional) awkward photos with my Heinkeken buddy </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Senior/vday1.jpeg">
@@ -513,23 +539,16 @@
 				<div class="desc"> Valentine's day at Davis </div>
 			</div>
 			<div class="gallery">
-				<a target="_blank" href="Senior/awkphoto2.jpg">
-					<img src="Senior/awkphoto2.jpg" alt="awkphoto2" width="600" height="400">
+				<a target="_blank" href="Senior/babysitting.jpeg">
+					<img src="Senior/babysitting.jpeg" alt="babysitting" width="600" height="400">
 				</a>
-				<div class="desc">2/3 (intentional) awkward photos with my Heinkeken buddy </div>
+				<div class="desc"> Winter quarter job: babysitting the cute Franco's twins </div>
 			</div>
-
 			<div class="gallery">
 				<a target="_blank" href="Senior/dc2.jpg">
 					<img src="Senior/dc2.jpg" alt="dc2" width="600" height="400">
 				</a>
 				<div class="desc"> AIPAC Conference in DC </div>
-			</div>
-			<div class="gallery">
-				<a target="_blank" href="Senior/babysitting.jpeg">
-					<img src="Senior/babysitting.jpeg" alt="babysitting" width="600" height="400">
-				</a>
-				<div class="desc"> Winter quarter job: babysitting the cute Franco's twins </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Senior/lastday.jpeg">
@@ -544,22 +563,10 @@
 				<div class="desc"> The yalla berry squad eats at yolo berry (for the last time...) </div>
 			</div>
 			<div class="gallery">
-				<a target="_blank" href="Senior/awkphoto3.jpg">
-					<img src="Senior/awkphoto3.jpg" alt="awkphoto3" width="600" height="400">
+				<a target="_blank" href="Senior/greenbelt2.jpg">
+					<img src="Senior/greenbelt2.jpg" alt="greenbelt2" width="600" height="400">
 				</a>
-				<div class="desc">3/3 (intentional)awkward photos with my Heinkeken buddy </div>
-			</div>
-			<div class="gallery">
-				<a target="_blank" href="Senior/lastmojito2.jpeg">
-					<img src="Senior/lastmojito2.jpeg" alt="lastmojito2" width="600" height="400">
-				</a>
-				<div class="desc"> Last mojito night </div>
-			</div>
-			<div class="gallery">
-				<a target="_blank" href="Senior/lastmojito.jpeg">
-					<img src="Senior/lastmojito.jpeg" alt="lastmojito" width="600" height="400">
-				</a>
-				<div class="desc"> Last mojito night </div>
+				<div class="desc"> A walk in the greenbelt</div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Senior/greenbelt3.jpg">
@@ -568,10 +575,22 @@
 				<div class="desc"> A walk in the greenbelt</div>
 			</div>
 			<div class="gallery">
-				<a target="_blank" href="Senior/greenbelt2.jpg">
-					<img src="Senior/greenbelt2.jpg" alt="greenbelt2" width="600" height="400">
+				<a target="_blank" href="Senior/lastmojito.jpeg">
+					<img src="Senior/lastmojito.jpeg" alt="lastmojito" width="600" height="400">
 				</a>
-				<div class="desc"> A walk in the greenbelt</div>
+				<div class="desc"> Last mojito night </div>
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="Senior/lastmojito2.jpeg">
+					<img src="Senior/lastmojito2.jpeg" alt="lastmojito2" width="600" height="400">
+				</a>
+				<div class="desc"> Last mojito night </div>
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="Senior/awkphoto3.jpg">
+					<img src="Senior/awkphoto3.jpg" alt="awkphoto3" width="600" height="400">
+				</a>
+				<div class="desc">3/3 (intentional)awkward photos with my Heinkeken buddy </div>
 			</div>
 			<div class="gallery">
 				<a target="_blank" href="Senior/lastmeal.jpg">
@@ -579,8 +598,25 @@
 				</a>
 				<div class="desc"> Celebration dinner for the end of winter quarter</div>
 			</div>
+			<div class="gallery">
+				<a target="_blank" href="Senior/grad1.jpg">
+					<img src="Senior/grad1.jpg" alt="grad1" width="600" height="400">
+				</a>
+				<div class="desc"> Graduation </div>
+			</div>
 		</nav>
+	</nav>
 
+	<script>
+	$(document).ready(function(){
+		$("#back-toggle").click(function(){
+			$("#back").toggle();
+		});
+		$("#back-toggle").click(function(){
+			$("#disappear").hide();
+		});
+	});
+	</script>
 	<script>
 			$(document).ready(function(){
 				$("#freshman-toggle").click(function(){
