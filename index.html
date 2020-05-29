@@ -7,7 +7,6 @@
 		  crossorigin="anonymous"></script>
 	<style>
 
-
 .button{
 	margin-right:900px;
   padding: 15px 20px;
@@ -21,24 +20,18 @@
 	height: 300px;
 	display: block;
 }
-.button1{
-	margin-right:900px;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration:none;
-  display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
-  cursor: pointer;
-	width:auto;
-	height: auto;
-	display: block;
-}
 .button_back{
-	background-image: url("background.jpg");
+	background-image: url("background1.jpg");
 	background-repeat: no-repeat;
-	background-size: contain;
-	color: MidnightBlue;
+	background-size: cover;
+	color: #f1c40f;
+	width:1240px;
+	height: 434px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 270px;
+  padding-right: 0px;
+	text-shadow: 1px 1px 1px MidnightBlue;
 }
 .button_fresh{
 	background-image: url("freshbackground.jpeg");
@@ -64,12 +57,12 @@
 	color: #e8ecb5;
 
 }
-
-	.header{
-		background-color: MidnightBlue;
+	#header{
+		background-color: MidnightBlue ;
 		padding:20px;
 		text-align: center;
 		color: #f1c40f;
+
 	}
 	.color2{
 		color:#f1c40f;
@@ -111,13 +104,13 @@
 	</style>
 	</head>
 	<body>
-		<div class="header">
+		<div id="header">
 			<h1 class="color2 center">UC Davis Memories</h1>
-			<p class="color2 center"> &#128690;&#128004; 2016-2020 &#128004;&#128690;<p/>
+			<p  class="color2 center"> &#128690;&#128004; 2016-2020 &#128004;&#128690;<p/>
 		</div>
 		<div id="disappear">
-		<button1 id=back-toggle class="button button_fresh"> Click on me </button1> </div>
-  	<nav id="back">
+		<button id=back-toggle class="button button_back" onclick="myFunction()"> Click here to get started </button> </div>
+		<nav id="back">
 		<button id=freshman-toggle class="button button_fresh"> Freshman Year <br> (2016-2017)</button>
   	<nav id="fresh">
 		<div class="gallery">
@@ -606,6 +599,12 @@
 			</div>
 		</nav>
 	</nav>
+
+	<script>
+	function myFunction(){
+		document.getElementById("header").style.backgroundColor="MidnightBlue";
+	}
+	</script>
 
 	<script>
 	$(document).ready(function(){
