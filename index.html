@@ -17,7 +17,7 @@
   margin: 4px 2px;
   cursor: pointer;
 	width:1240px;
-	height: 300px;
+	height: 100px;
 	display: block;
 }
 .button_back{
@@ -114,7 +114,7 @@
 		<div id="disappear">
 		<button id=back-toggle class="button button_back" onclick="myFunction()"> Click here to get started </button> </div>
 		<nav id="back">
-		<button id=freshman-toggle class="button button_fresh"> Freshman Year <br> (2016-2017)</button>
+		<button id=freshman-toggle class="button button_fresh" onclick="myFunction()"> Freshman Year <br> (2016-2017)</button>
   	<nav id="fresh">
 		<div class="gallery">
 			<a target="_blank" href="freshman/dorm.png">
@@ -680,6 +680,10 @@
 				$("#freshman-toggle").click(function(){
 					$("#fresh").slideToggle();
 				});
+				$("#freshman-toggle").click(function(){
+					$("button").animate({height:'300px'});
+				});
+				
 			});
 	</script>
 	<script>
