@@ -39,8 +39,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: MidnightBlue;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 	padding-right: 50px;
+	padding-top: 30px;
+
 }
 .button_soph{
 	background-image: url("sophbackground.png");
@@ -52,7 +54,7 @@
 	background-image: url("junbackground.jpeg");
 	background-size: cover;
 	color: #e8ecb5;
-	padding-top: 60px;
+	padding-top: 30px;
 }
 .button_sen{
 	background-image: url("senbackground.jpeg");
@@ -114,7 +116,7 @@
 		<div id="disappear">
 		<button id=back-toggle class="button button_back" onclick="myFunction()"> Click here to get started </button> </div>
 		<nav id="back">
-		<button id=freshman-toggle class="button button_fresh" onclick="myFunction()"> Freshman Year <br> (2016-2017)</button>
+		<button id=freshman-toggle class="button button_fresh"> Freshman Year <br> (2016-2017)</button>
   	<nav id="fresh">
 		<div class="gallery">
 			<a target="_blank" href="freshman/dorm.png">
@@ -680,10 +682,14 @@
 				$("#freshman-toggle").click(function(){
 					$("#fresh").slideToggle();
 				});
-				$("#freshman-toggle").click(function(){
-					$("button").animate({height:'300px'});
-				});
-				
+			$("#freshman-toggle").click((function(){
+				var i = 0;
+				return function() {
+					$("button").animate({
+						height: (++i % 2) ? 300 : 100
+					});
+				}
+			})())
 			});
 	</script>
 	<script>
@@ -691,6 +697,14 @@
 				$("#Sophomore-toggle").click(function(){
 					$("#soph").slideToggle();
 				});
+			$("#Sophomore-toggle").click((function(){
+				var i = 0;
+				return function() {
+					$("button").animate({
+						height: (++i % 2) ? 300 : 100
+					});
+				}
+			})())
 			});
 	</script>
 	<script>
@@ -698,6 +712,14 @@
 				$("#Junior-toggle").click(function(){
 					$("#jun").slideToggle();
 				});
+			$("#Junior-toggle").click((function(){
+				var i = 0;
+				return function() {
+					$("button").animate({
+						height: (++i % 2) ? 300 : 100
+					});
+				}
+			})())
 			});
 	</script>
 	<script>
@@ -705,6 +727,14 @@
 				$("#Senior-toggle").click(function(){
 					$("#sen").slideToggle();
 				});
+			$("#Senior-toggle").click((function(){
+				var i = 0;
+				return function() {
+					$("button").animate({
+						height: (++i % 2) ? 300 : 100
+					});
+				}
+			})())
 			});
 	</script>
 	</body>
